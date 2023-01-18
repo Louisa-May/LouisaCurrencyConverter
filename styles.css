@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background-image: linear-gradient(to right, #00b4db, #0083b0);
+}
+
+::selection {
+  color: #fff;
+  background: #675afe;
+}
+
+.wrapper {
+  width: 40%;
+  height: 90vh;
+  padding: 30px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+label {
+  color: #b4886b;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 1px solid #0083b0;
+  border-radius: 5px;
+}
+
+.currency select {
+  padding: 10px 20px 10px 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #dedede;
+  font-size: 16px;
+  background: transparent;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: right 10px top 50%, 0, 0;
+  background-size: 12px auto, 100%;
+  background-repeat: no-repeat;
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.from {
+  margin: 15% 0 10% 0;
+}
+
+.to {
+  margin: 5% 0 10% 0;
+}
+
+.rate {
+  color: black;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #00b4db;
+  width: 50%;
+  border-radius: 10px;
+  position: relative;
+  left: 25%;
+  text-align: center;
+}
+
+.timestamp {
+  position: absolute;
+  bottom: 20%;
+  font-weight: 100;
+}
+
+.time {
+  position: relative;
+  left: 70%;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+.footer {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+  color: #024359;
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  opacity: 0.6;
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    width: 55%;
+  }
+}
+
+@media (max-width: 980px) {
+  .wrapper {
+    width: 65%;
+  }
+}
+
+@media (max-width: 830px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .currency input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 830px) {
+  .wrapper {
+    width: 60%;
+  }
+
+  .currency input {
+    width: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    width: 70%;
+  }
+
+  .currency input {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .currency select {
+    font-size: 14px;
+  }
+
+  .currency img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .rate {
+    width: 90%;
+    left: 5%;
+    font-size: 10px;
+  }
+
+  .time {
+    left: 5%;
+    font-weight: 100;
+    font-size: 10px;
+  }
+
+  label {
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+  .footer {
+    left: 40%;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .currency input {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .currency select {
+    font-size: 14px;
+  }
+
+  .currency img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .rate {
+    width: 90%;
+    left: 5%;
+    font-size: 10px;
+  }
+
+  .time {
+    left: 5%;
+    font-weight: 100;
+    font-size: 10px;
+  }
+
+  label {
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+  .footer {
+    left: 40%;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .currency input {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .currency select {
+    font-size: 14px;
+  }
+
+  .currency img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .rate {
+    width: 90%;
+    left: 5%;
+    font-size: 10px;
+  }
+
+  .time {
+    left: 5%;
+    font-weight: 100;
+    font-size: 10px;
+  }
+
+  label {
+    font-weight: 100;
+    font-size: 14px;
+  }
+
+  .footer {
+    left: 40%;
+    font-size: 8px;
+  }
+}

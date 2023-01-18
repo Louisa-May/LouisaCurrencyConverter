@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Currency Converter</h1>
+      <form action="#">
+        <div class="from">
+          <label for="from">From</label>
+          <div class="currency">
+            <input type="text" id="amount-one" placeholder="0" value="1" />
+            <img src="https://flagcdn.com/48x36/gb.png" alt="flag" />
+            <select id="currency-one"></select>
+          </div>
+        </div>
+
+        <div class="rate" id="rate"></div>
+
+        <div class="to">
+          <label for="to">To</label>
+          <div class="currency">
+            <input type="text" id="amount-two" placeholder="0" value="1" />
+            <img src="https://flagcdn.com/48x36/ng.png" alt="flag" />
+            <select id="currency-two"></select>
+          </div>
+        </div>
+
+        <div class="timestamp">
+          <label for="timestamp">Last Updated</label>
+          <div class="time" id="time"></div>
+        </div>
+      </form>
+      <div class="footer">
+        <p>© Fintech Weezy 2022</p>
+      </div>
+    </div>
+    <script src="country-list.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
